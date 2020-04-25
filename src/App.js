@@ -8,7 +8,10 @@ import Say from './Say';
 
 function App() {
   return (
-    <Say />
+    <EventPractice />
+
+    // 함수형 컴포넌트의 스테이트 실습
+    // <Say />
 
     // 클래스형 컴포넌트의 스테이트 실습
     // <Counter />
