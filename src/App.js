@@ -7,20 +7,23 @@ import Counter from './Counter';
 import Say from './Say';
 import ValidationSample from './ValidationSample';
 import ScrollBox from './ScrollBox';
+import IterationSample from './IterationSample';
 
 class App extends Component {
   render() {
     return (
+      <IterationSample />
+
       // 클래스 기반 DOM ref 사용 실습
       // <ValidationSample />
 
       // 컴포넌트 ref 사용 실습
-      <div>
-        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
-        <button onClick={() => this.scrollBox.scrollToBottom()}>
-          맨 밑으로
-        </button>
-      </div>
+      // <div>
+      //   <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+      //   <button onClick={() => this.scrollBox.scrollToBottom()}>
+      //     맨 밑으로
+      //   </button>
+      // </div>
     );
   }
 }
